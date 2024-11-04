@@ -7,7 +7,7 @@ permissions:
 jobs:
   build:
     name: Post welcome comment
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - run: gh pr comment $PR_PULL --body "Welcome to the repository!"
         env:
